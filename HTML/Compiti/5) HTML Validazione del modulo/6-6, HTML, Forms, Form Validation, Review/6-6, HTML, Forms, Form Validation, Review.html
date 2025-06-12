@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Questo modulo include la validazione lato client-->
+    <form action="/verifica" method="post">
+
+        <label for="nome">Nome completo:</label>
+        <input name="nome" id="nome" type="text" required>
+        
+        <br>
+
+        <label for="eta">Inserisci la tua età:</label>
+        <input name="eta" id="eta" type="number" min="18" max="99">
+
+        <br>
+
+        <label for="messaggio">Scrivi un breve messaggio:</label>
+        <input name="messaggio" id="messaggio" type="text" minlength="10" maxlength="100" required>
+
+        <br>
+
+        <label>Inserisci un codice numerico (esattamente 6 cifre):</label>
+        <input name="codice" id="codice" type="text" required pattern="[0-9]{6}">
+
+        <br>
+
+        <input type="submit" value="Invia">
+
+    </form>
+</body>
+</html>
