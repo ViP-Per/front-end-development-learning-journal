@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Centro di Adozione per Creature Mitiche</title>
+</head>
+
+<body>
+
+    <header>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#adopt">Adotta</a></li>
+            <li><a href="#creature">Creature</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="https://mythicalcreatureslist.com/">Encyclopedia of Mythical Creatures </a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="Home">
+
+            <figure>
+                <img src="" alt="Paesaggio magico con creature">
+                <figcaption>Benvenuto nella tua prossima avventura!</figcaption>
+            </figure>
+
+            <audio src="" controls></audio>
+
+            <br>
+
+            <p><span>una volta nella vita</span><strong>compagni magici</strong><em>viaggio straordinario</em></p>
+
+            <br>
+
+            <figure>
+                <video controls>
+                    <source src="">
+                </video>
+                <figcaption>Scopri il mondo delle creature mitiche!</figcaption>
+            </figure>
+
+            <!--
+                l'elemento figure sottostante contiene un elemento "img" avvolto in un ancora, "a" che collega alla pagina wikipedia
+                lista draghi con un collegamento assoluto, l'atributo target specifica che il link venga aperto in una
+                nuova pagina, l'atributo "src" serve per lindirizzo del immagine ma non ho l'immagine, l'atributo "alt"
+                invece ha due funzioni, il primo e indicare il testo che si mostrera al posto del immagine nel caso 
+                quest ultima non sia disponibile, il sencondo utilizo invece e per gli utenti che utilizano lo screen reader
+            -->
+            <figure>
+                <a href="https://en.wikipedia.org/wiki/List_of_dragons_in_mythology_and_folklore" target="_blank"><img src="" alt="Lista draghi"></a>
+            </figure>
+
+        </section>
+
+        <section id="adopt">
+
+            <form action="submit_adoption.html" method="post">
+
+                <label for="nome">Nome Completo</label>
+                <input type="text" name="nome" id="nome">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+
+                <label for="eta">Età</label>
+                <input type="text" name="eta" id="eta">
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+
+                <label for="craaPref">Creatura preferita</label>
+
+                <select id="craaPref" name="craaPref">
+                    <option value="drago">Drago</option>
+                    <option value="unicorno">Unicorno</option>
+                    <option value="fenice">Fenice</option>
+                    <option value="grifone">Grifone</option>
+                </select>
+
+                <input type="text" name="citta" id="citta" list="listacitta">
+                <datalist id="listacitta">
+                    <option value="Avalon"></option>
+                    <option value="Atlantide"></option>
+                    <option value="El Dorado"></option>
+                    <option value="Camelot"></option>
+                </datalist>
+
+                <p>Livello di Compatibilità Magica</p>
+                <input type="range" name="compatibilita" id="compatibilita" min="0" max="100">
+
+                <p>Abilità magiche</p>
+                <input type="checkbox" name="volo" id="volo">
+                <label for="volo">Volo</label>
+
+                <input type="checkbox" name="incantesmi" id="incantesmi">
+                <label for="incantesmi">Incantesmi</label>
+
+                <input type="checkbox" name="pozioni" id="pozioni">
+                <label for="pozioni">creazione di pozioni</label>
+
+                <br>
+
+                <p>Velocità di adozione</p>
+                <br>
+                <label for="urgente">Entro una settimana</label>
+                <input type="radio" name="velocita" id="urgente">
+
+                <label for="settimana">Entro una settimana</label>
+                <input type="radio" name="velocita" id="settimana">
+
+                <label for="senFreta">Senza Fretta</label>
+                <input type="radio" name="velocita" id="senFreta">
+
+                <br>
+
+                <label for="why">Perché si desidera adottare una creatura?</label>
+                <textarea name="why" id="why"></textarea>
+
+                <br>
+
+                <input type="submit" value="Adotta Ora">
+
+            </form>
+
+        </section>
+
+        <section id="creature">
+
+            <table border="1">
+
+                <thead>
+
+                    <tr>
+                        <th>Nome</th>
+                        <th>Specie</th>
+                        <th>Livello di Potenza</th>
+                        <th>Disponibilità</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <th scope="col">Fira</th>
+                        <th scope="col">Fenice</th>
+                        <th scope="col">95</th>
+                        <th scope="col">Disponibile</th>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Stormwing</th>
+                        <th scope="row">drago</th>
+                        <th scope="row">100</th>
+                        <th scope="row">Non disponibile</th>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Silvershadow</th>
+                        <th scope="row">Unicorno</th>
+                        <th scope="row">88</th>
+                        <th scope="row">Disponibile</th>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Grumblebeard</th>
+                        <th scope="row">Grifone</th>
+                        <th scope="row">92</th>
+                        <th scope="row">Disponibile</th>
+                    </tr>
+
+                </tbody>
+
+                <tfoot>
+
+                    <tr>
+                        <th scope="row">Creature Totali</th>
+                        <th scope="row" colspan="4">4</th>
+                    </tr>
+
+                </tfoot>
+
+            </table>
+
+            <br>
+
+        </section>
+
+        <section id="faq">
+            
+            <ul>
+                <li>
+                    <p>
+                        <strong>Q:</strong> Quanto tempo richiede l'adozione? <br>
+                        <strong>A:</strong> La maggior parte delle creature è pronta entro 3–5 giorni magici.<br>
+                        <a href="#adopt">Vedi dettagli</a>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <strong>Q:</strong> È <strong>richiesta</strong> la formazione?<br>
+                        <strong>A:</strong> La formazione di base è richiesta per draghi e grifoni.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <strong>Q:</strong> Posso adottare più di una creatura?<br>
+                        <strong>A:</strong> Sì, se si <strong>dimostra una alta compatibilità magica.</strong><br>
+                    </p>
+                </li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="#home">Torna SU</a>
+        <p>2025 Centro di Adozione per Creature Mitiche.</p>
+    </footer>
+</body>
+
+</html>

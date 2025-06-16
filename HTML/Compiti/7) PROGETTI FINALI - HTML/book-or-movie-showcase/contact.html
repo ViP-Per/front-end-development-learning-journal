@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contatti</title>
+    </head>
+
+    <body>
+
+        <main>
+
+            <header>
+                <h1>Scrivici</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="details.html">Dettagli</a></li>
+                        <li><a href="contact.html">Contatti</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <article>
+                
+                <form action="" method="post">
+                    <label for="nome">Nome Completo</label>
+                    <input name="nome" id="nome" type="text" value="nome" required>
+
+                    <br>
+
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="text" value="email" required>
+
+                    <br>
+
+                    <label for="persPref">Scegli il tuo personaggio preferito</label>
+                    <select id="persPref">
+                        <option value="Elira">Elira</option>
+                        <option value="Bram">Bram</option>
+                        <option value="Willow">Willow</option>
+                    </select>
+
+                    <br>
+
+                    <p>La consiglieresti?</p>
+                    <input type="radio" name="si" id="si" value="si">
+                    <label for="si">Si</label>
+
+                    <input type="radio" name="no" id="no" value="no">
+                    <label for="no">No</label>
+
+                    <br>
+
+                    <label for="pensieri">Condividi il tuo pensiero</label>
+                    <textarea name="pensieri" id="pensieri" maxlength="300" rows="5" cols="30"></textarea>
+
+                    <br>
+
+                    <label for="iscrizione">Iscrivimi agli aggiornamenti per i fan</label>
+                    <input type="checkbox" name="iscrizione" id="iscrizione" value="iscrizione">
+
+                    <br>
+
+                    <input type="submit" value="Invia Messaggio">
+                </form>
+
+            </article>
+
+            <!-- Fine del modulo di contatto -->
+        </main>
+
+    </body>
+</html>

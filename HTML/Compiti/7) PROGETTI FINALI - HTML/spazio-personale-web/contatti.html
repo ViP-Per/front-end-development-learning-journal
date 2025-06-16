@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <title>Il Mio Spazio Personale Web</title>
+    </head>
+
+    <body>
+
+        <main>
+
+            <article>
+
+                <form action="" method="post">
+
+                    <input name="nome" id="nome" type="text" required minlength="3">
+                    <label for="nome">Nome Completo</label>
+
+                    <br>
+
+                    <input name="email" id="email" type="text" required>
+                    <label for="email">Indirizzo Email</label>
+
+                    <br>
+
+                    <input name="password" id="password" type="password" required pattern=".{0,6}">
+                    <label for="password">Password</label>
+
+                    <br>
+
+                    <input name="eta" id="eta" type="number" min="13" max="120">
+                    <label for="eta">Età</label>
+
+                    <br>
+
+                    <input name="val" id="val" type="range" min="0" max="10">
+                    <label for="val">Soddisfazione</label>
+
+                    <br>
+
+                    <textarea name="messagio" id="messagio" maxlength="500"></textarea>
+                    <label for="messagio">Messagio</label>
+
+                    <br>
+
+                    <select name="motivo" id="motivo">
+                        <option value="lavoro">Lavoro</option>
+                        <option value="collaborazione">Collaborazione</option>
+                        <option value="altro">Altro</option>
+                    </select>
+                    <label for="motivo">Motivo del Contatto</label>
+
+                    <br>
+
+                    <input name="come" id="come" list="comeOpz" type="text">
+                    <datalist id="comeOpz">
+                        <option value="google"></option>
+                        <option value="amico"></option>
+                        <option value="linkedIn"></option>
+                    </datalist>
+                    <label for="come">Come mi hai trovato?</label>
+
+                    <br>
+
+                    <p>Metodo di Contatto Preferito</p>
+                    <input name="contattoPref" id="prefEmail" type="radio" value="Email">
+                    <label for="prefEmail">Email</label>
+
+                    <input name="contattoPref" id="prefTelefono" type="radio" value="Telefono">
+                    <label for="prefTelefono">Telefono</label>
+    
+                    <br>
+
+                    <p>Iscriviti a...</p>
+                    <input name="iscrizione" id="notizie" type="checkbox" value="notizie">
+                    <label for="notizie">Notizie</label>
+
+                    <input name="iscrizione" id="eventi" type="checkbox" value="eventi">
+                    <label for="eventi">Eventi</label>
+
+                    <br>
+
+                    <input type="submit" value="Invia Messaggio">
+                </form>
+                
+            </article>
+
+            <!--Fine del modulo contatti-->
+
+        </main>
+
+    </body>
+</html>
