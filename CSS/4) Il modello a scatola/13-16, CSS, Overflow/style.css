@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ a {
+    text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#d1{
+  height: 100px;
+  overflow: scroll;
+}
+
+#d2{
+  width: 200px;
+  height: 100px;
+  overflow-x: scroll;
+}
+
+#s1{
+  border: 2px solid rebeccapurple;
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+  margin: 20px 10px;
+}

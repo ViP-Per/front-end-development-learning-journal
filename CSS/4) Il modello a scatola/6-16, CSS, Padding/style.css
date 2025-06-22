@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ a {
+    text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#p1{
+  border: 3px solid coral;
+  padding: 10px;
+}
+
+#p2{
+  border: 3px solid fuchsia;
+  padding-bottom: 10px;
+}
+
+#d1{
+  border: 3px solid red;
+  padding-top: 20px;
+}
+
+#s1{
+  border: 2px solid blue;
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  background-color: yellow;
+
+  width: fit-content;
+}
