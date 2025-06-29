@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ a {
+    text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+div{
+  width: 200px;
+  float: left;
+}
+
+.box-uno{
+  height: 100px;
+  background-color: blue;
+}
+
+.box-due{
+  height: 180px;
+  background-color: red;
+}
+
+.box-tre{
+  height: 120px;
+  background-color: violet;
+}
+
+.speciale{
+  background-color: green;
+  height: 100px;
+  width: 400px;
+  clear: left;
+}

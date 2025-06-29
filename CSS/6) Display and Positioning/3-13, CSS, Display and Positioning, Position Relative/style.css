@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ a {
+    text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#d1{
+  background-color: green;
+  position: relative;
+  top: 50px;
+  left: 120px;
+}
+
+#d2{
+  background-color: gray;
+}

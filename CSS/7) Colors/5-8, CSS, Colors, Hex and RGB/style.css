@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ a {
+    text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#d1,#d2{
+  width: 300px;
+  height: 150px;
+  color: white;
+}
+
+#d1{
+  background-color: #7b1fa2;
+  margin-bottom: 15px;
+}
+
+#d2{
+  background-color: rgb(123, 31, 162);
+}
+
+#head1{
+  background-color: #76ff03;
+}
+
+#head2{
+  background-color: rgb(255, 109, 0);
+}
+
+#head3{
+  background-color: #6200ea;
+}
+
+#head1,#head2,#head3{
+  color: white;
+  padding: 20px;
+}
